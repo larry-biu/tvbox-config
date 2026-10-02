@@ -150,9 +150,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-0-29a4ac47727bfdd8.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-0-29a4ac47727bfdd8.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {
@@ -163,9 +161,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-1-e0551345b0e94eef.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-1-e0551345b0e94eef.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {
@@ -176,9 +172,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-2-c177fd3d27501028.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-2-c177fd3d27501028.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {
@@ -189,9 +183,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-3-5c609cf402f1d03b.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-3-5c609cf402f1d03b.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {
@@ -202,9 +194,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-4-c6bf54481866c845.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-4-c6bf54481866c845.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {
@@ -215,9 +205,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "https://larry-biu.github.io/tvbox-config/assets/bili-5-335e3b8b287b344f.json"
-      },
+      "ext": "https://larry-biu.github.io/tvbox-config/assets/bili-5-335e3b8b287b344f.json",
       "jar": "https://larry-biu.github.io/tvbox-config/assets/bili-3b39d08338d1fd4e.jar;md5;19a2394581c78bee735242b9dc009058"
     },
     {

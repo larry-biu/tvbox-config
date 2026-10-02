@@ -150,9 +150,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-0.json"
-      },
+      "ext": "asset:bili-0.json",
       "jar": "asset:bili.jar"
     },
     {
@@ -163,9 +161,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-1.json"
-      },
+      "ext": "asset:bili-1.json",
       "jar": "asset:bili.jar"
     },
     {
@@ -176,9 +172,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-2.json"
-      },
+      "ext": "asset:bili-2.json",
       "jar": "asset:bili.jar"
     },
     {
@@ -189,9 +183,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-3.json"
-      },
+      "ext": "asset:bili-3.json",
       "jar": "asset:bili.jar"
     },
     {
@@ -202,9 +194,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-4.json"
-      },
+      "ext": "asset:bili-4.json",
       "jar": "asset:bili.jar"
     },
     {
@@ -215,9 +205,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": {
-        "json": "asset:bili-5.json"
-      },
+      "ext": "asset:bili-5.json",
       "jar": "asset:bili.jar"
     },
     {
