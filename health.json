@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-02T01:17:20.397716+00:00",
+  "checked_at": "2026-10-02T01:23:01.968347+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
-  "configuration_changed": true,
+  "configuration_changed": false,
   "last_good_config_sha256": "5d887a17d2ffb618f6e52ef44d05adc1990b44ca6441f2f67433bfbb98ee7173",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-02T01:17:34.332499+00:00",
+  "last_success_at": "2026-10-02T01:23:22.108016+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -69,5 +69,348 @@
   ],
   "warnings": [],
   "dependencies": 12,
-  "jar_execution": "仅ZIP/DEX类与校验值检查；未执行第三方JAR"
+  "jar_execution": "仅ZIP/DEX类与校验值检查；未执行第三方JAR",
+  "live_audit": {
+    "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
+    "checked_endpoints": 63,
+    "accessible": 9,
+    "channel_count": 58,
+    "removed_channels": 0,
+    "policy": "地区限制或外网不可达不自动删节目；地址仍由原权威维护流程提供",
+    "results": [
+      {
+        "url_sha256": "63110e2c8978a92c35b30cf1f13ba245afb6fab8d89add86e22d76c33a6246ff",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "aac1ccf07ac4308179052f8fa205ac21ef8c87ec60bb445dbcdf200160b12c75",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "c237b70f877ebee3c18a45127942ef771670f41edef5c6bb12193002c1b0db99",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "25eac05f165d6cebe0bbe00955486548bea826661a331afa08e08789e07589f5",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "4f7a756c09477061775163742c944575b4a1f851e55e7d169252601ccfeffe6c",
+        "http_status": 206,
+        "sample_bytes": 719,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "e180c6c50af76d9d1823e944032fc5530ee25fceae6f8964ff3210b74d06c88f",
+        "http_status": 200,
+        "sample_bytes": 427,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "99c57663a3b48d341388da71c8e9744d963ab138dbb9c61e469deb421c5c8340",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
+        "http_status": 206,
+        "sample_bytes": 758,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "4dfee071ec4d2f1ef04f30c9c8dd23ecda3d224eda5163a276da62fdf2b265db",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "6745bb4d7186408df0c7833992c397afc2078d671c1f0cefdb215bf5e3b797f0",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "29da6617282b1f418b1e6d566c7f67b56aef289eddbde6e47d663b5598762043",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "3293ee104009b9904a48a03a9e7057a2c0d3735395dafebe24fc119268be1493",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "c67103fcf981af6db25407e6c7c50e8e10a4bd7e49d9644c3ca7823bf51e12db",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "40db163ae302452164400d4530fa2f1b263fced9c67cf02f39b02502fc1c281b",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "d0a7ef16d590ae0ac9e039fc99bfd539ee0cfaf1ee432b1a791c90851d6e465a",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "187973c388a930e61b3f5f0fc778da8f90d23fb57de146bf5b56c2fddd737072",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "bc9aa2dae8f06e89cb16a28a54ee9109aa68a0f350e989b235aced801c6f3826",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "e0672d22c1c2628283a33e0c82ac441bb4ef8d801eb2d9e64c5ae5645a7e91db",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "22022e0cdfd33df3ca7dc33c17ec47d35aed8e28b296f2f06d7eeb2a1d094b6f",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "8f43a8ca9f3222410ebe49097f181ae9f2881d1a6245175ba5c0abf6822096ac",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "c8cd9f02881ff35d543b114054541691eab45a3935f7337fdeff42ee01ff9e13",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "dd18a8e145ad9b2cfd23a9a4994a648a014b4ec38eab63ba62a5fdec4b1401eb",
+        "http_status": 206,
+        "sample_bytes": 408,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "ade4e8d908cb02ab9e84df16ce4e62f06f81286541d25716957c37cfbf26c59a",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "1b81b207ef4862b70220a24339945f7770c38f546eeab1de3d224443084bf0ee",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "7ab4ec93bc4bb0a3d2c6e56336033c3a2a14ca588698a9c4666bd06beea38a4b",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "9174a024adad6cf2318e185e6690fdd0a101f71b47703d6bfabb3d137a19627b",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "2b578266eb9e8d779028318034cc2051bfbe618da3e43b647ac13dd380c20b21",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "b5ec5c29c23caae86aa291e0d011fc675c2b8e4cd7efdb7a4adb9fc1dd5ff316",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "171f1f84a439778acfc8a8f2d30f14a7f9068f1833bb592193378039056437e3",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "b82928f241d907c74e0541a21a5afb8ccd7bd20b957895d1ffb0538a6cb01555",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "278bf2216b1e502f8e2541e2c968f98750698c1f3911deb35726bc5a6d659d1d",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "399153552146a56d9ecd3a6b13a373ab305fbe2e45b39725b586b6d90a10a068",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "cee73c93ce5ec855a7fc27c714f78104cb0053e383a2524dd00ca723064c7a1d",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "7ddd127f2bb7553bc9d822cfa3977a38a49deb6b2f8a928cfe8c64782f4e003c",
+        "http_status": 206,
+        "sample_bytes": 699,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "16932cef3710bb2d98205239fe4f48003629e781faa49b20c2763e690eaa6720",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "7e5fc1d0647abe09428781f315b55b794224744d301f1badecaa4cdbea143967",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "fe1e95e76f01464d2f98395d22f0e7898b8f6d455ae3a5cb49c2c7e67b2f1143",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "3b426d441230e56f880677dc7ad5175c74e950979f757cee09fcbd0218f87aa8",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "e80983b17edd4aa5fc6416f568505f4a1d58d2e70d92a6b62353d8b71e092184",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "f7e63987ad217f8e2684aeb4e52093372e49e176a23e562e75f2bd70baef3330",
+        "http_status": 206,
+        "sample_bytes": 839,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "f84fa0e987c198b11cf47a47b579f750ff864cd9653fad2872755c12fb3fcde9",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
+        "http_status": 206,
+        "sample_bytes": 526,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "fb57cb4cc7a5ff0a35803d4b82f3ed734701b818c707b8786dbc8373cc86de9c",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "47d6247a9f40d560c71313a52bfa64bc3181101e2704f12822dd2ad3c5172dc6",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "76b5c08baf848f81700e7f55f513ab69188cdff847e35a7906cf0ec577f41cdf",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "2f533a44bba097ce1436a000156acc09519bba47a64c7565fc921c3abb4c0cc2",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "71dd61707fc8ec05049aea90b471e458704bf68300594453c317e358fd42bef3",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "e2496c2e6b327ad2ffc69d845797639f24111bbdf9dae1faca7950e8ff82c9a3",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
+        "http_status": 206,
+        "sample_bytes": 474,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "f5f303d90fc8f2eac99b99a2592c9c309cd0848a6368059274395bc13a22b5d1",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "e520605b011f8fac36f8447cd50a051c0d2e82798867d6cc43e72b3b89c8df86",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "49130e7593d0ee0d3e21c60e69a64a557cb4751e1e3faa88a932d1d781cb809a",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "3eb0bcde87a3f84dde96b722e155c7a8335943b019d2bca3119e53c8edb60d02",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "ea6b4e477090ffba1511ec32478b81af9bfcf76e5e45eb532080b25a8cf315dc",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "0e67932b189a998d048f70f65dd69bc177444f9d7e55a571f8e032d39ae133e5",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "346f736881f9f320b0d5cb624069fda7395c4550163e4105d7d6acf7785cffb4",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "c1bc2787a09c88e3beeeee8e8638bb69e348f98183110ed5cfe254d3dd8040ff",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "a2f603043d8764db0312ce06aefcc5a97e1419541182f8ec2167575d412661ad",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "68182b71e98075254fd130988b736a8a89b278baefbd70f0d1c5d90b0c422e4b",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "f04da9652adaa509366fefc9f9b1214a9e927f79d7c48e6293a586fb17f7784d",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "d0095d3c519d2689e95801c00527737f9dc2ca82a7264737cb7e473da14c8c7a",
+        "accessible": false,
+        "reason": "URLError"
+      },
+      {
+        "url_sha256": "fee4e1a5c16816617d54760320f54a6056771726167a3a514a823c1b9ccdf7f2",
+        "http_status": 200,
+        "sample_bytes": 109,
+        "media_decoded": false,
+        "accessible": true
+      },
+      {
+        "url_sha256": "06cce07d553ecd808f5ea74c54eb28ca6eca0b99894b7cd75986ad0ca66a6123",
+        "accessible": false,
+        "reason": "URLError"
+      }
+    ]
+  }
 }
