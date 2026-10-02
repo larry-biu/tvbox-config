@@ -34,7 +34,7 @@
       "key": "非凡影视",
       "name": "非凡影视",
       "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod/",
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -64,7 +64,7 @@
       "key": "如意影视",
       "name": "如意影视",
       "type": 1,
-      "api": "https://cj.rycjapi.com/api.php/provide/vod/",
+      "api": "https://cj.rycjapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -280,7 +280,8 @@
       "key": "本地",
       "name": "本地视频",
       "type": 3,
-      "api": "csp_LocalFile"
+      "api": "csp_LocalFile",
+      "ext": ""
     },
     {
       "key": "配置中心",
@@ -293,7 +294,8 @@
       "style": {
         "type": "rect",
         "ratio": 1.597
-      }
+      },
+      "ext": ""
     }
   ],
   "ijk": [

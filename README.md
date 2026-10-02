@@ -42,25 +42,19 @@ GitHub Raw 的适配文件分别为根目录 `config.json`、`tvbox.json`、`fon
 
 原参考中的成人站入口、旧GitHub代理、共享Cookie／appkey及第三方VIP解析未采用。分类过滤用于首页组织，不承诺过滤所有站点搜索结果。设备原订阅没有被远程改动。
 
-## 维护与回退
+## 自动维护与回退
 
-权威配置选择是 [source/selection.json](source/selection.json)。辅助资源来源见 [source/asset-sources.json](source/asset-sources.json)，哈希锁定见 [source/asset-manifest.json](source/asset-manifest.json)。只修改权威选择后重新生成，避免手改八个播放器入口造成不一致。
+已改为GitHub自动运行，无需用户手工更新：
 
-```sh
-python3 scripts/build.py
-python3 scripts/build.py --check
-```
+- 约每6小时读取主入口与备用入口，跟随选定站点的接口、网盘域名、JAR与分类变化。
+- 只同步本配置选定入口，不自动扩大频道或引入共享账号。清除共享Cookie，检查JAR ZIP/DEX类和声明MD5，再核验资源API分类、搜索与详情。
+- 可读取的资源API优先显示。候选失败时保留上一版配置，下次任务自动重试；作者停更或所有源失效时不会伪造成功。
+- 每次运行提交健康记录，自动发布Pages，并匿名回读实际文件和资源哈希。任务采用并发锁，不强推删除历史。
+- 直播只检测已有快照的HTTP可达性，外网或地区限制不会自动删节目。原直播维护流程更新产物后，由本线程自动巡检只读同步发布，不另建采集规则。Mac离线期间云端点播维护仍运行，直播的新本地产物在Mac上线后同步。
+- 本线程另有自动巡检，检查GitHub任务是否停跑或连续失败，进行授权范围内修复；状态无变化或无需用户处理时保持静默。
 
-需要更新第三方JAR／分类时显式运行以下命令。更新工具不会执行JAR，会检查ZIP与必需类、清空共享凭证；全部资源读取成功才切换资源清单。审查差异并完成必要的设备验证后，再提交和推送。资源按内容哈希命名，旧文件保留，因此回退旧配置仍有对应JAR和分类。
+[健康状态](health.json)记录最近尝试、最近成功、来源、接口验证和直播抽样；不是设备实播凭证。GitHub调度可能排队，维护频率不是精确时间保证。使用者的播放器刷新配置后取得新版；是否自动刷新取决于客户端。
 
-```sh
-python3 scripts/refresh_assets.py
-python3 scripts/build.py
-python3 scripts/build.py --check
-```
+GitHub提交历史保留回退依据，资源按内容哈希命名。文件下载成功、配置校验通过和电视起播分别记录。外部作者、资源站和用户自己的网盘授权仍可能变化；自动更新解决维护流程，不能保证第三方永久服务。
 
-直播由项目的独立维护流程负责，本仓库只接收其 `live-list/output/` 产物。发布快照不会脱离该权威入口再建一套采集规则。源更新后，本机 `app-config/publish.py` 重新生成并提交推送；GitHub不会自动知道尚未发布的本机变化。暂未安装定时任务，避免把未知状态自动覆盖成默认。
-
-GitHub提交记录是回退点。要恢复之前的已验收版本，使用 `git revert` 生成恢复提交并推送，不强推删除历史。固定URL继续有效；如需锁死某次版本，可把Raw地址里的 `main` 替换成那次提交SHA。完整出版哈希在 [manifest.json](manifest.json)。
-
-[参考核查](source/reference-review.json) · [点播API核查](source/vod-verification.json)
+[参考核查](source/reference-review.json) · [点播API核查](source/vod-verification.json) · [自动任务](https://github.com/larry-biu/tvbox-config/actions/workflows/maintain.yml)

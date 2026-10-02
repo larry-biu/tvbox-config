@@ -1,0 +1,78 @@
+name: Automatic maintenance and deployment
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'source/**'
+      - 'live/**'
+      - '.github/workflows/maintain.yml'
+  workflow_dispatch:
+    inputs:
+      simulate_failure:
+        description: 'Test retaining the last good configuration without changing sources'
+        required: false
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: tvbox-maintenance-and-pages
+  cancel-in-progress: false
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test failure preservation and source adaptation
+        run: python -m unittest discover -s scripts -p 'test_*.py' -q
+      - name: Refresh allowed upstreams and audit published live sources
+        env:
+          SIMULATE_FAILURE: ${{ inputs.simulate_failure }}
+        run: |
+          if [ "$SIMULATE_FAILURE" = "true" ]; then
+            python scripts/maintenance.py --simulate-upstream-failure
+          else
+            python scripts/maintenance.py
+          fi
+          python scripts/build.py --check
+      - name: Commit verified publication and maintenance receipt
+        run: |
+          git add assets source '*.json'
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: refresh configuration and health receipt'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy verified files
+        id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Verify public configuration, JAR and catalogs after deployment
+        run: python scripts/verify_public.py --base https://larry-biu.github.io/tvbox-config
+      - name: Preserve run evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: maintenance-receipt-${{ github.run_id }}
+          path: |
+            health.json
+            public-readback.json
+            manifest.json
+          retention-days: 30

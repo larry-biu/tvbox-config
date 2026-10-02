@@ -1,11 +1,11 @@
 {
-  "published_at": "2026-10-02T00:14:01.929147+00:00",
-  "authority_checked_at": "2026-10-02T00:13:42.154760+00:00",
+  "published_at": "2026-10-02T01:20:50.410349+00:00",
+  "authority_checked_at": "2026-10-02T01:14:42.906532+00:00",
   "authority": "live-list/output (唯一输入，发布包为派生快照)",
-  "channel_count": 73,
+  "channel_count": 58,
   "groups": {
-    "央视": 20,
-    "各省卫视": 51,
+    "央视": 19,
+    "各省卫视": 37,
     "香港": 1,
     "国际·中国": 1
   },
@@ -97,8 +97,8 @@
     },
     {
       "channel": "CCTV5+",
-      "available": false,
-      "reason": "本次公开候选未通过或频道身份未确认"
+      "available": true,
+      "reason": null
     },
     {
       "channel": "CCTV4K",
@@ -312,15 +312,15 @@
     },
     {
       "channel": "农林卫视",
-      "available": false,
-      "reason": "本次公开候选未通过或频道身份未确认"
+      "available": true,
+      "reason": null
     }
   ],
   "authority_hashes": {
-    "live.txt": "f91c9f3070fbb9fbfad269edbecaaf11068d4b6d66b7fe91b084f8a1ce404676",
-    "live.m3u": "57d54393cfb23f4026eafeee64bbc367e46a6c5fd0f9a26a672b84fa6b069612",
-    "live-channels.json": "6304187cdc448d1fdc120ead43eceb3139528dd25f6d39c45c6936a63bf5ee82",
-    "maintenance-report.json": "b86959e843cfa879f74bc0f13d1339ab56767d5e2b5129aaee15e506c369f5b1"
+    "live.txt": "ad3e00a5a48d50586f38ca5c99c32093fa0488dd7628e86157213ebfd7d43a76",
+    "live.m3u": "70128de9c0b2741571598fae8bbf166471dd953fe802386d5db0fdab92e58c6e",
+    "live-channels.json": "f1deea9a16137be7413433eed3b0913cfd8168128025a54173e7d2124517a871",
+    "maintenance-report.json": "7abfc6b14ca4b13de7e5d5c5c87c9b078c874e95a61b2ef2bd7b204167287b5a"
   },
   "device_playback": "未验收",
   "long_term_stability": "未证明"

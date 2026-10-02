@@ -1,0 +1,18 @@
+{
+  "upstreams": [
+    "https://700sjro44343.vicp.fun/240731/one/",
+    "http://www.影视仓.com",
+    "http://www.影视仓.net",
+    "http://www.ok影视.com"
+  ],
+  "core_site_keys": {
+    "非凡影视": "feifan",
+    "如意影视": "ruyi"
+  },
+  "search_sample": "西游记",
+  "minimum_healthy_catalogs": 1,
+  "request_timeout_seconds": 15,
+  "request_attempts": 2,
+  "schedule_hours": 6,
+  "live_policy": "只检测已有权威发布快照，不删除地区受限节目，不独立采集或改写直播地址"
+}

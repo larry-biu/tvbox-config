@@ -3,72 +3,84 @@
     "file": "luban-bbf12b041cafe520.jar",
     "sha256": "bbf12b041cafe5203221ab7ed985fe859ea726cd67bb1b09e8bfbfec62edec68",
     "md5": "ea169f8282eebc4a538283f9b8b27abe",
-    "origin": "http://47.120.41.246:8025/vip/jar/lubin.php"
+    "origin": "http://47.120.41.246:8025/vip/jar/lubin.php",
+    "resolved_origin": "https://jihulab.com/blank6231139/Tvboxjar/-/raw/main/luban0916.jar"
   },
   "bili.jar": {
     "file": "bili-3b39d08338d1fd4e.jar",
     "sha256": "3b39d08338d1fd4e2e9d6869ed85eca5197d05816300cfb5b5e03d86a972b5a2",
     "md5": "19a2394581c78bee735242b9dc009058",
-    "origin": "https://z.qiqiv.cn/666/spider.jar"
+    "origin": "https://z.qiqiv.cn/666/spider.jar",
+    "resolved_origin": "https://z.qiqiv.cn/666/spider.jar"
   },
   "bili-0.json": {
     "file": "bili-0-29a4ac47727bfdd8.json",
     "sha256": "29a4ac47727bfdd8761020499d567851b6c5f9fc5a14f140cbf38f5c693e1e0d",
     "md5": "c0748719ccf23fc66d4e5e31e97c76ae",
-    "origin": "https://z.qiqiv.cn/666/json/Blixq.json"
+    "origin": "https://z.qiqiv.cn/666/json/Blixq.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/Blixq.json"
   },
   "bili-1.json": {
     "file": "bili-1-e0551345b0e94eef.json",
     "sha256": "e0551345b0e94eef8af0d3f85060915ff0e883086ac18942ba205246a32e8d86",
     "md5": "365c94e7b13df69d2f4caea057773408",
-    "origin": "https://z.qiqiv.cn/666/json/Blixs.json"
+    "origin": "https://z.qiqiv.cn/666/json/Blixs.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/Blixs.json"
   },
   "bili-2.json": {
-    "file": "bili-2-c177fd3d27501028.json",
-    "sha256": "c177fd3d275010287c3566ae10fd8683a3f0f2713213d92aa2e85d57e83fc685",
-    "md5": "5a04c5542f0cc4c95fadaaba64a62be8",
-    "origin": "https://z.qiqiv.cn/666/json/演唱会.json"
+    "file": "bili-2-b8e41005a21b6d71.json",
+    "sha256": "b8e41005a21b6d71816440bff1e395e8199e670fee175b2a1a5c9f2f2bc15552",
+    "md5": "eaa79d418e4b504087f6b3a05577f919",
+    "origin": "https://z.qiqiv.cn/666/json/演唱会.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/%E6%BC%94%E5%94%B1%E4%BC%9A.json"
   },
   "bili-3.json": {
     "file": "bili-3-5c609cf402f1d03b.json",
     "sha256": "5c609cf402f1d03b4516b48a4262166b60e69c9721bf04287dffb58bbe3517e5",
     "md5": "b969938b58c5f044c2b761dc5560cfb6",
-    "origin": "https://z.qiqiv.cn/666/json/MTV.json"
+    "origin": "https://z.qiqiv.cn/666/json/MTV.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/MTV.json"
   },
   "bili-4.json": {
     "file": "bili-4-c6bf54481866c845.json",
     "sha256": "c6bf54481866c845df96777fe3ef9d80aab29f4e345fb1caff4830c7df6612d7",
     "md5": "1f72a5c9f51e77a820ffcefb92302ef5",
-    "origin": "https://z.qiqiv.cn/666/json/Bili.json"
+    "origin": "https://z.qiqiv.cn/666/json/Bili.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/Bili.json"
   },
   "bili-5.json": {
-    "file": "bili-5-335e3b8b287b344f.json",
-    "sha256": "335e3b8b287b344f4674208e83b983182d59cc893e640036acd9a62b98642bfe",
-    "md5": "4dc5eb1c4ce429df45615c58f2b8ab56",
-    "origin": "https://z.qiqiv.cn/666/json/影视解说.json"
+    "file": "bili-5-e9570f094d76f957.json",
+    "sha256": "e9570f094d76f9570d5b0e76ce372a5f02cb8968cd12623d215d6f1a184536c1",
+    "md5": "c2931201491faeceaa3073fbca349a27",
+    "origin": "https://z.qiqiv.cn/666/json/影视解说.json",
+    "resolved_origin": "https://z.qiqiv.cn/666/json/%E5%BD%B1%E8%A7%86%E8%A7%A3%E8%AF%B4.json"
   },
   "bili-6.json": {
     "file": "bili-6-4c395db3742d9b8f.json",
     "sha256": "4c395db3742d9b8f604cdab0da066266a93b667a5d72cdc8243606c26e77e5db",
     "md5": "2db84d8ce17386653d4e582b8732be2d",
-    "origin": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"
+    "origin": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt",
+    "resolved_origin": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"
   },
   "bili-7.json": {
     "file": "bili-7-cc91c00e9d85ae12.json",
     "sha256": "cc91c00e9d85ae123978aad03d1b8a716d9f632e5b07aec1b0b50211b0c1c67d",
     "md5": "cfc0b3de46d8f0a9ab8f75db6dfcefaa",
-    "origin": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"
+    "origin": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt",
+    "resolved_origin": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"
   },
   "bili-8.json": {
     "file": "bili-8-71a7d523d2754831.json",
     "sha256": "71a7d523d27548311dc75f1174fe88d509691e27c4b704214e51228ed8a4063c",
     "md5": "0d0a7ac275a80f4dbd4c5160fba9c3cb",
-    "origin": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"
+    "origin": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt",
+    "resolved_origin": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"
   },
   "bili-9.json": {
     "file": "bili-9-dfb53665f5b058a7.json",
     "sha256": "dfb53665f5b058a7f5d4168237296f9d49e4efa66cb7ceda640f213fff7d6a7d",
     "md5": "4b2b29ca7bfc1ac305966440c4b16104",
-    "origin": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt"
+    "origin": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt",
+    "resolved_origin": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt"
   }
 }

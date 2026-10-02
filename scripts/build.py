@@ -49,7 +49,7 @@ def build():
                 'groups': {g['group']: len(g['channels']) for g in live},
                 'device_playback': '未验收', 'files': {}}
     for path in sorted(ROOT.glob('*.json')) + sorted((ROOT/'assets').glob('*')) + sorted((ROOT/'live').glob('*')):
-        if path.name == 'manifest.json': continue
+        if path.name in ('manifest.json', 'public-readback.json'): continue
         if path.is_file(): manifest['files'][path.relative_to(ROOT).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     write(ROOT / 'manifest.json', manifest)
     validate()
