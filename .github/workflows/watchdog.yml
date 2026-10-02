@@ -1,0 +1,29 @@
+name: Cloud maintenance watchdog
+on:
+  schedule:
+    - cron: '47 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/watchdog.yml'
+      - 'scripts/watchdog.py'
+      - 'scripts/test_watchdog.py'
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: tvbox-cloud-watchdog
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify recovery decisions
+        run: python3 -m unittest discover -s scripts -p test_watchdog.py -q
+      - name: Check and recover the cloud maintenance workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/watchdog.py
