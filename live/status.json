@@ -1,0 +1,327 @@
+{
+  "published_at": "2026-10-02T00:14:01.929147+00:00",
+  "authority_checked_at": "2026-10-02T00:13:42.154760+00:00",
+  "authority": "live-list/output (唯一输入，发布包为派生快照)",
+  "channel_count": 73,
+  "groups": {
+    "央视": 20,
+    "各省卫视": 51,
+    "香港": 1,
+    "国际·中国": 1
+  },
+  "coverage": [
+    {
+      "channel": "CCTV1",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV2",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV3",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV4",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV5",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV6",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV7",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV8",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV9",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV10",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV11",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV12",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV13",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV14",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV15",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV16",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "CCTV17",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "CCTV5+",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "CCTV4K",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "CCTV8K",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "北京卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "东方卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "浙江卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "湖南卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "江苏卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "安徽卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "山东卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "河南卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "河北卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "辽宁卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "黑龙江卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "吉林卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "天津卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "四川卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "重庆卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "贵州卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "云南卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "广东卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "深圳卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "湖北卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "江西卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "东南卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "厦门卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "宁夏卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "青海卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "甘肃卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "陕西卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "山西卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "内蒙古卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "新疆卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "西藏卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "海南卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "广西卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "兵团卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "康巴卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "安多卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "延边卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "三沙卫视",
+      "available": true,
+      "reason": null
+    },
+    {
+      "channel": "大湾区卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "山东教育卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    },
+    {
+      "channel": "农林卫视",
+      "available": false,
+      "reason": "本次公开候选未通过或频道身份未确认"
+    }
+  ],
+  "authority_hashes": {
+    "live.txt": "f91c9f3070fbb9fbfad269edbecaaf11068d4b6d66b7fe91b084f8a1ce404676",
+    "live.m3u": "57d54393cfb23f4026eafeee64bbc367e46a6c5fd0f9a26a672b84fa6b069612",
+    "live-channels.json": "6304187cdc448d1fdc120ead43eceb3139528dd25f6d39c45c6936a63bf5ee82",
+    "maintenance-report.json": "b86959e843cfa879f74bc0f13d1339ab56767d5e2b5129aaee15e506c369f5b1"
+  },
+  "device_playback": "未验收",
+  "long_term_stability": "未证明"
+}

@@ -1,0 +1,16 @@
+{
+  "urls": [
+    {
+      "name": "Larry·影视仓",
+      "url": "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config.json"
+    },
+    {
+      "name": "Larry·TVBox旧版",
+      "url": "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/tvbox.json"
+    },
+    {
+      "name": "Larry·FongMi",
+      "url": "https://raw.githubusercontent.com/larry-biu/tvbox-config/main/fongmi.json"
+    }
+  ]
+}

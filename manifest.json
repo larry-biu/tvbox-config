@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "site_count": 18,
+  "channel_count": 73,
+  "groups": {
+    "央视": 20,
+    "各省卫视": 51,
+    "香港": 1,
+    "国际·中国": 1
+  },
+  "device_playback": "未验收",
+  "files": {
+    "config-pages.json": "fadc270bcd63cac3feae605e8882f5d36ffa176cd8a75fe37e67617e6df28874",
+    "config.json": "ac451dac19f3a3fbcd0ea7f62fd808f5b6f401232c52bde976a87fe1ef956399",
+    "fongmi-pages.json": "fadc270bcd63cac3feae605e8882f5d36ffa176cd8a75fe37e67617e6df28874",
+    "fongmi.json": "ac451dac19f3a3fbcd0ea7f62fd808f5b6f401232c52bde976a87fe1ef956399",
+    "tvbox-pages.json": "ada28f20e8557cf13147d1fc4c3033834cf383694e686616f8ea60df287c8740",
+    "tvbox.json": "31a9b9857475a22232037b892dd834626173fbe8b90962d526669cc4c29e8589",
+    "warehouse-pages.json": "33e81522c9a1b83e740e08004a741741059fc1377ae3c15f3a6901ca21e16648",
+    "warehouse.json": "ba17089e9fb9b8327d14220f6d82f50a40a3359447df5cf85874a1607ae9f757",
+    "assets/bili-0-29a4ac47727bfdd8.json": "29a4ac47727bfdd8761020499d567851b6c5f9fc5a14f140cbf38f5c693e1e0d",
+    "assets/bili-1-e0551345b0e94eef.json": "e0551345b0e94eef8af0d3f85060915ff0e883086ac18942ba205246a32e8d86",
+    "assets/bili-2-c177fd3d27501028.json": "c177fd3d275010287c3566ae10fd8683a3f0f2713213d92aa2e85d57e83fc685",
+    "assets/bili-3-5c609cf402f1d03b.json": "5c609cf402f1d03b4516b48a4262166b60e69c9721bf04287dffb58bbe3517e5",
+    "assets/bili-3b39d08338d1fd4e.jar": "3b39d08338d1fd4e2e9d6869ed85eca5197d05816300cfb5b5e03d86a972b5a2",
+    "assets/bili-4-c6bf54481866c845.json": "c6bf54481866c845df96777fe3ef9d80aab29f4e345fb1caff4830c7df6612d7",
+    "assets/bili-5-335e3b8b287b344f.json": "335e3b8b287b344f4674208e83b983182d59cc893e640036acd9a62b98642bfe",
+    "assets/bili-6-4c395db3742d9b8f.json": "4c395db3742d9b8f604cdab0da066266a93b667a5d72cdc8243606c26e77e5db",
+    "assets/bili-7-cc91c00e9d85ae12.json": "cc91c00e9d85ae123978aad03d1b8a716d9f632e5b07aec1b0b50211b0c1c67d",
+    "assets/bili-8-71a7d523d2754831.json": "71a7d523d27548311dc75f1174fe88d509691e27c4b704214e51228ed8a4063c",
+    "assets/bili-9-dfb53665f5b058a7.json": "dfb53665f5b058a7f5d4168237296f9d49e4efa66cb7ceda640f213fff7d6a7d",
+    "assets/luban-bbf12b041cafe520.jar": "bbf12b041cafe5203221ab7ed985fe859ea726cd67bb1b09e8bfbfec62edec68",
+    "live/channels.json": "6304187cdc448d1fdc120ead43eceb3139528dd25f6d39c45c6936a63bf5ee82",
+    "live/live.m3u": "57d54393cfb23f4026eafeee64bbc367e46a6c5fd0f9a26a672b84fa6b069612",
+    "live/live.txt": "f91c9f3070fbb9fbfad269edbecaaf11068d4b6d66b7fe91b084f8a1ce404676",
+    "live/status.json": "1db42890ce2a6730478489eec5e31ef8763ad6c27cb931efa1a8cc8c73eabdc2"
+  }
+}

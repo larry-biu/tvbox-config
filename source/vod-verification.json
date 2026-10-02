@@ -1,0 +1,86 @@
+[
+  {
+    "name": "量子",
+    "api": "http://cj.lziapi.com/api.php/provide/vod/",
+    "checked_at": "2026-10-02T00:09:32.028804+00:00",
+    "stages": {
+      "category": {
+        "status": 200,
+        "bytes": 6536,
+        "sha256": "12b37125f3f018f8286638a7da02f6dbc83be60f7f8fc79f3301bc74cc3f9dfd",
+        "count": 20
+      },
+      "search": {
+        "status": 200,
+        "bytes": 86428,
+        "sha256": "ea7d50888187e1c07938ec6727cdf36f30acb02b4d412bc8df5fa087e5382a43",
+        "count": 20
+      },
+      "detail": {
+        "status": 200,
+        "bytes": 3612,
+        "sha256": "b99bb043b0d499bba56aaf9958c1cbda648d51e9ff2e2bc9b105a563246f5447",
+        "title": "西游记外传",
+        "has_episode_urls": true,
+        "play_sources": "liangzi$$$lzm3u8"
+      }
+    },
+    "playback": "未实播；仅验证分类/搜索/详情载荷"
+  },
+  {
+    "name": "非凡",
+    "api": "http://ffzy5.tv/api.php/provide/vod/",
+    "checked_at": "2026-10-02T00:09:34.684696+00:00",
+    "stages": {
+      "category": {
+        "status": 200,
+        "bytes": 5851,
+        "sha256": "efd3842128c6f4b8b025034e1fce8fe676e012d5a10ccf501d39df71cf25f547",
+        "count": 20
+      },
+      "search": {
+        "status": 200,
+        "bytes": 5625,
+        "sha256": "9ac587fe803ffb7e47e993dcf3e3d9e91be69dd6be917acb5add8b67f09e994b",
+        "count": 19
+      },
+      "detail": {
+        "status": 200,
+        "bytes": 10545,
+        "sha256": "4b09b4c3cd438112067c1816e1e12d8a7ba0fa672bdddf1e141075165b93882a",
+        "title": "西游记 动画",
+        "has_episode_urls": true,
+        "play_sources": "feifan$$$ffm3u8"
+      }
+    },
+    "playback": "未实播；仅验证分类/搜索/详情载荷"
+  },
+  {
+    "name": "如意",
+    "api": "https://cj.rycjapi.com/api.php/provide/vod/",
+    "checked_at": "2026-10-02T00:09:37.377762+00:00",
+    "stages": {
+      "category": {
+        "status": 200,
+        "bytes": 6219,
+        "sha256": "460b698bcb6b4a09feff43cd1a55385c05e32274cd7156d18300163ecfdd35ac",
+        "count": 20
+      },
+      "search": {
+        "status": 200,
+        "bytes": 6481,
+        "sha256": "0c0f969aa5f08a89ee247f0c55db1943dfa7e9809776a7e52957fb1355306983",
+        "count": 20
+      },
+      "detail": {
+        "status": 200,
+        "bytes": 3606,
+        "sha256": "be5e5640f9a52f9953abcb4debca1c6f9108f24365adf3ad914fb3b70e12aa8e",
+        "title": "后西游记第一季",
+        "has_episode_urls": true,
+        "play_sources": "rym3u8$$$ruyi"
+      }
+    },
+    "playback": "未实播；仅验证分类/搜索/详情载荷"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-02T00:17:04.946589+00:00",
+  "references": [
+    {
+      "source": "https://link3.cc/uuccc",
+      "role": "主参考，读取主接口与备用地址，采用经核验的JAR和选定站点结构",
+      "main_config": "http://47.120.41.246:8025/vip/vip/tv.json",
+      "config_sha256": "413cb7cb406043e01df6baa48028971d6bf5bf048401498b9fbe47ae3a34e69d"
+    },
+    {
+      "source": "用户提供的mao.txt",
+      "sha256": "8b431b164d609d7f0bef5c20e8b97696cbfc60cad5c6f90cda99da1ad2aa8089",
+      "role": "参考量子接口、IJK软硬解码参数；旧代理和VIP解析未采用",
+      "old_jar_md5": "1c8d1a16f5969512dde56c97ec099765",
+      "current_origin_jar_md5": "5bfb9c86dc5ebd60fa91c2751f1cfa33",
+      "old_pin_status": "与当前原仓库文件不同"
+    }
+  ],
+  "decisions": [
+    "严格JSON，无注释；中文名称；18个站点入口",
+    "3个资源API分类、搜索、详情匿名读取成功，返回剧集地址，但未实播",
+    "10份B站分类已读取并清空共享凭证，存入本仓库；2份JAR下载及DEX所需类检查成功，不在Mac执行",
+    "不采用共享Cookie/appkey、成人站入口、第三方VIP解析、失效代理地址",
+    "网盘入口需要用户自己的授权；网盘与B站JAR执行、电视播放未验收",
+    "直播仅发布live-list权威输出快照，不另行采集或重写画质"
+  ]
+}
