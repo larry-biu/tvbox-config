@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-03T16:29:19.093564+00:00",
+  "checked_at": "2026-10-03T21:25:23.670537+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "5d887a17d2ffb618f6e52ef44d05adc1990b44ca6441f2f67433bfbb98ee7173",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-03T16:29:43.230172+00:00",
+  "last_success_at": "2026-10-03T21:25:46.260505+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -298,7 +298,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 516,
+        "sample_bytes": 526,
         "media_decoded": false,
         "accessible": true
       },
@@ -334,7 +334,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 200,
+        "http_status": 206,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
