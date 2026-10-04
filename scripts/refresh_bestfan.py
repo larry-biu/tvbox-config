@@ -44,28 +44,34 @@ def convert(body):
             lines.append(name + "," + "#".join(routes))
     return "\n".join(lines) + "\n", count
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", type=Path)
-    args = parser.parse_args()
-    output = ROOT / "live/bestfan.txt"
+def refresh(upstream, filename, receipt_name, input_path=None):
+    output = ROOT / "live" / filename
     try:
-        body = args.input.read_text() if args.input else urllib.request.urlopen(
-            urllib.request.Request(UPSTREAM, headers={"User-Agent": "Larry-TVConfig/1.0"}), timeout=25
+        body = input_path.read_text() if input_path else urllib.request.urlopen(
+            urllib.request.Request(upstream, headers={"User-Agent": "Larry-TVConfig/1.0"}), timeout=25
         ).read(4 * 1024 * 1024).decode("utf-8-sig")
         converted, count = convert(body)
         output.parent.mkdir(parents=True, exist_ok=True)
         temporary = output.with_suffix(".tmp")
         temporary.write_text(converted, encoding="utf-8")
         os.replace(temporary, output)
-        receipt = {"upstream": UPSTREAM, "checked_at": datetime.now(timezone.utc).isoformat(),
+        receipt = {"upstream": upstream, "checked_at": datetime.now(timezone.utc).isoformat(),
                    "channels": count, "sha256": hashlib.sha256(converted.encode()).hexdigest()}
-        (ROOT / "source/bestfan-live-receipt.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
-        print("bestfan TXT refreshed:", count, "channels")
+        (ROOT / "source" / receipt_name).write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
+        print(filename, "refreshed:", count, "channels")
     except Exception as error:
         if not output.exists():
             raise
-        print("bestfan update failed; previous TXT retained:", type(error).__name__)
+        print(filename, "update failed; previous TXT retained:", type(error).__name__)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path)
+    args = parser.parse_args()
+    refresh(UPSTREAM, "bestfan.txt", "bestfan-live-receipt.json", args.input)
+    if not args.input:
+        refresh("https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
+                "guovin.txt", "guovin-live-receipt.json")
 
 if __name__ == "__main__":
     main()

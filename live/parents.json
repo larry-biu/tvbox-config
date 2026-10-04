@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "sources": [
+    "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/bestfan.txt",
+    "https://larry-biu.github.io/tvbox-config/live/bestfan.txt",
+    "https://larry-biu.github.io/tvbox-config/live/guovin.txt",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/guovin.txt"
+  ]
+}
