@@ -48,11 +48,12 @@ jobs:
             python scripts/maintenance.py --simulate-upstream-failure
           else
             python scripts/maintenance.py
+            python scripts/refresh_bestfan.py
           fi
           python scripts/build.py --check
       - name: Commit verified publication and maintenance receipt
         run: |
-          git add assets source '*.json'
+          git add assets source live/bestfan.txt '*.json'
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: refresh configuration and health receipt'
             git push origin HEAD:main
