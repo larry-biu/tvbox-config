@@ -1,0 +1,5 @@
+{
+  "channels": ["CCTV1", "CCTV2", "CCTV3", "CCTV13"],
+  "playlists": {"primary": "bestfan.txt", "backup": "guovin.txt"},
+  "receipts": {"primary": "bestfan-live-receipt.json", "backup": "guovin-live-receipt.json"}
+}

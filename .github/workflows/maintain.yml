@@ -20,6 +20,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 concurrency:
   group: tvbox-maintenance-and-pages
   cancel-in-progress: false
@@ -40,6 +41,12 @@ jobs:
           python-version: '3.12'
       - name: Test failure preservation and source adaptation
         run: python -m unittest discover -s scripts -p 'test_*.py' -q
+      - name: Prepare bounded video decoder
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg
+          fi
       - name: Refresh allowed upstreams and audit published live sources
         env:
           SIMULATE_FAILURE: ${{ inputs.simulate_failure }}
@@ -49,9 +56,13 @@ jobs:
           else
             python scripts/maintenance.py
             python scripts/refresh_bestfan.py
-            # Refresh checksums after the live playlists change.
-            python scripts/build.py
           fi
+      - name: Decode priority channels and check refresh freshness
+        if: inputs.simulate_failure != true
+        run: python scripts/parents_monitor.py
+      - name: Rebuild publication checksums after maintenance
+        run: |
+          python scripts/build.py
           python scripts/build.py --check
       - name: Commit verified publication and maintenance receipt
         run: |
@@ -78,4 +89,11 @@ jobs:
             health.json
             public-readback.json
             manifest.json
+            parents-health.json
           retention-days: 30
+      - name: Notify owner only on actionable failure or recovery
+        if: always() && inputs.simulate_failure != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MAINTENANCE_FAILED: ${{ job.status == 'failure' }}
+        run: python scripts/parents_alert.py
