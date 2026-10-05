@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-05T01:53:55.040298+00:00",
+  "scope": "GitHub runner video decode; not television playback",
+  "channels": [
+    {
+      "channel": "CCTV1",
+      "decoded": true,
+      "sources": [
+        {
+          "source": "primary",
+          "decoded": true,
+          "attempts": 1
+        },
+        {
+          "source": "backup",
+          "decoded": true,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "channel": "CCTV2",
+      "decoded": true,
+      "sources": [
+        {
+          "source": "primary",
+          "decoded": true,
+          "attempts": 1
+        },
+        {
+          "source": "backup",
+          "decoded": true,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "channel": "CCTV3",
+      "decoded": true,
+      "sources": [
+        {
+          "source": "primary",
+          "decoded": true,
+          "attempts": 1
+        },
+        {
+          "source": "backup",
+          "decoded": true,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "channel": "CCTV13",
+      "decoded": true,
+      "sources": [
+        {
+          "source": "primary",
+          "decoded": true,
+          "attempts": 2
+        },
+        {
+          "source": "backup",
+          "decoded": true,
+          "attempts": 1
+        }
+      ]
+    }
+  ],
+  "refresh": {
+    "primary": {
+      "last_refresh_at": "2026-10-05T01:53:54.908095+00:00",
+      "age_hours": 0.0
+    },
+    "backup": {
+      "last_refresh_at": "2026-10-05T01:53:54.973043+00:00",
+      "age_hours": 0.0
+    }
+  },
+  "alert_reasons": [],
+  "healthy_runs": 1,
+  "tv_acceptance": "separate"
+}
