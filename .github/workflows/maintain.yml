@@ -49,6 +49,8 @@ jobs:
           else
             python scripts/maintenance.py
             python scripts/refresh_bestfan.py
+            # Refresh checksums after the live playlists change.
+            python scripts/build.py
           fi
           python scripts/build.py --check
       - name: Commit verified publication and maintenance receipt
