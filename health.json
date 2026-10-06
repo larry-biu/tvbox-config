@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-05T14:55:09.874991+00:00",
+  "checked_at": "2026-10-06T00:08:39.947101+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "5d887a17d2ffb618f6e52ef44d05adc1990b44ca6441f2f67433bfbb98ee7173",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-05T14:55:40.017558+00:00",
+  "last_success_at": "2026-10-06T00:09:03.856726+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "37a71e37fa2ab58486f559c4f3703acbe89d0f0152b8d334d83c276048c12def",
+        "response_sha256": "c0b895a2cef829c17d0645ca3332fd6d9c93b1ec1885bd0701e329e6a80c144a",
         "result_count": 20
       },
       "search": {
@@ -53,7 +53,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "fafa8aa0a21b079e6ffa57cc84b8cec4b43a9db6fdec18dcf9ffad6d55c7fa40",
+        "response_sha256": "15da11aad00579ef20b607126e317e7f44b87e51fc123042168d4eadc4422656",
         "result_count": 20
       },
       "search": {
@@ -120,7 +120,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 206,
-        "sample_bytes": 764,
+        "sample_bytes": 758,
         "media_decoded": false,
         "accessible": true
       },
@@ -298,7 +298,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 458,
+        "sample_bytes": 526,
         "media_decoded": false,
         "accessible": true
       },
@@ -334,7 +334,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 206,
+        "http_status": 200,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
