@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
+      "channel": "CCTV1",
+      "reason": "user reported injected or looping platform ads; current normal frame does not exclude intermittent injection",
+      "evidence": "user report 2026-10-05"
+    },
+    {
+      "url": "http://120.198.95.220:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&down=1",
+      "channel": "CCTV1",
+      "reason": "user reported blue screen; Mac probe timed out",
+      "evidence": "user report 2026-10-05"
+    }
+  ]
+}

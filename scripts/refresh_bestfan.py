@@ -13,7 +13,10 @@ from pathlib import Path
 UPSTREAM = "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8"
 ROOT = Path(__file__).resolve().parents[1]
 
-def convert(body):
+def convert(body, blocked=None):
+    if blocked is None:
+        policy = ROOT / 'live/parents.json'
+        blocked = set(json.loads(policy.read_text()).get('blocked_route_urls', [])) if policy.exists() else set()
     groups = OrderedDict()
     name, group = "", "其他"
     for raw in body.splitlines():
@@ -29,6 +32,9 @@ def convert(body):
             elif "卫视" in name:
                 group = "卫视"
         elif line.startswith(("http://", "https://")) and name:
+            if line in blocked:
+                name = ""
+                continue
             channels = groups.setdefault(group, OrderedDict())
             routes = channels.setdefault(name, [])
             if line not in routes:

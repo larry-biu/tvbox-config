@@ -25,3 +25,13 @@ class ParentLiveTests(unittest.TestCase):
 
     def test_empty_playlist_is_rejected(self):
         with self.assertRaises(ValueError):module.convert('#EXTM3U\n')
+
+    def test_blocked_route_is_not_reintroduced_by_upstream(self):
+        text = '#EXTM3U\n'
+        for i in range(1, 22):
+            text += f'#EXTINF:-1,CCTV{i}\nhttp://good/{i}\n'
+        text += '#EXTINF:-1,CCTV1\nhttp://ad/1\n'
+        result, count = module.convert(text, {'http://ad/1'})
+        self.assertNotIn('http://ad/1', result)
+        self.assertIn('CCTV1,http://good/1', result)
+        self.assertEqual(21, count)
