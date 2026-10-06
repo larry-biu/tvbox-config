@@ -1,75 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-06T00:08:39.947101+00:00",
+  "checked_at": "2026-10-06T02:25:16.182345+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "5d887a17d2ffb618f6e52ef44d05adc1990b44ca6441f2f67433bfbb98ee7173",
   "device_playback": "未验收",
-  "state": "healthy",
+  "state": "retained",
+  "reason": "HTTPError: HTTP Error 429: Too Many Requests",
   "last_success_at": "2026-10-06T00:09:03.856726+00:00",
-  "upstream": {
-    "input": "https://700sjro44343.vicp.fun/240731/one/",
-    "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
-    "sha256": "5312246d5db54e012b582516b9f75c2b1a7e97127586310e5c3a4cab42853401",
-    "failed_entrances": []
-  },
-  "catalogs": [
-    {
-      "key": "量子影视",
-      "healthy": true,
-      "category": {
-        "response_sha256": "c0b895a2cef829c17d0645ca3332fd6d9c93b1ec1885bd0701e329e6a80c144a",
-        "result_count": 20
-      },
-      "search": {
-        "response_sha256": "ea7d50888187e1c07938ec6727cdf36f30acb02b4d412bc8df5fa087e5382a43",
-        "result_count": 20
-      },
-      "detail": {
-        "response_sha256": "b99bb043b0d499bba56aaf9958c1cbda648d51e9ff2e2bc9b105a563246f5447",
-        "result_count": 1
-      },
-      "media_playback": false
-    },
-    {
-      "key": "非凡影视",
-      "healthy": true,
-      "category": {
-        "response_sha256": "c71c092d9ef6b62892dfe241efd1f053994380a68044caaa8d1e80e3cc3032a7",
-        "result_count": 20
-      },
-      "search": {
-        "response_sha256": "9ac587fe803ffb7e47e993dcf3e3d9e91be69dd6be917acb5add8b67f09e994b",
-        "result_count": 19
-      },
-      "detail": {
-        "response_sha256": "4b09b4c3cd438112067c1816e1e12d8a7ba0fa672bdddf1e141075165b93882a",
-        "result_count": 1
-      },
-      "media_playback": false
-    },
-    {
-      "key": "如意影视",
-      "healthy": true,
-      "category": {
-        "response_sha256": "15da11aad00579ef20b607126e317e7f44b87e51fc123042168d4eadc4422656",
-        "result_count": 20
-      },
-      "search": {
-        "response_sha256": "723a75b27f8dc7821cc9c1ef6b4c06215b178dd82bec7961eb3b6ee5a96bc59d",
-        "result_count": 20
-      },
-      "detail": {
-        "response_sha256": "2ec83d2de386b4857a9567e938d079734c0820adce058f217e0ddefe4bf15038",
-        "result_count": 1
-      },
-      "media_playback": false
-    }
-  ],
-  "warnings": [],
-  "dependencies": 12,
-  "jar_execution": "仅ZIP/DEX类与校验值检查；未执行第三方JAR",
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
     "checked_endpoints": 63,
@@ -120,7 +59,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 206,
-        "sample_bytes": 758,
+        "sample_bytes": 764,
         "media_decoded": false,
         "accessible": true
       },
@@ -298,7 +237,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 526,
+        "sample_bytes": 456,
         "media_decoded": false,
         "accessible": true
       },
@@ -334,7 +273,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 200,
+        "http_status": 206,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
