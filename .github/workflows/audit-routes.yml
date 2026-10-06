@@ -1,0 +1,54 @@
+name: Exhaustive live route audit
+on:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Immutable source commit to audit
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare decoder and image measurements
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install -q Pillow
+      - name: First choice round one
+        env:
+          SOURCE_REF: ${{ inputs.source_ref }}
+        run: python scripts/full_route_audit.py --phase first_round1 --source-ref "$SOURCE_REF"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-round1
+          path: route-audit
+          retention-days: 7
+      - name: First choice round two
+        env:
+          SOURCE_REF: ${{ inputs.source_ref }}
+        run: python scripts/full_route_audit.py --phase first_round2 --source-ref "$SOURCE_REF"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-round2
+          path: route-audit
+          retention-days: 7
+      - name: Every route of every channel
+        env:
+          SOURCE_REF: ${{ inputs.source_ref }}
+        run: python scripts/full_route_audit.py --phase all_routes --source-ref "$SOURCE_REF"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: complete-route-audit
+          path: route-audit
+          retention-days: 7
