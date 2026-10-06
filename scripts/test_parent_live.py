@@ -10,7 +10,7 @@ class ParentLiveTests(unittest.TestCase):
         for i in range(1, 22):
             text += f'#EXTINF:-1 group-title="央视",CCTV-{i}\nhttp://example.org/{i}.m3u8\n'
         text += '#EXTINF:-1,CCTV1\nhttp://backup.example/1.m3u8\n'
-        result, count = module.convert(text)
+        result, count = module.convert(text, blocked=set())
         self.assertEqual(21, count)
         self.assertIn('CCTV1,http://example.org/1.m3u8#http://backup.example/1.m3u8', result)
 

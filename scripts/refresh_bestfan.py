@@ -9,14 +9,17 @@ import urllib.request
 from collections import OrderedDict
 from datetime import datetime, timezone
 from pathlib import Path
+import route_policy
 
 UPSTREAM = "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8"
 ROOT = Path(__file__).resolve().parents[1]
 
 def convert(body, blocked=None):
     if blocked is None:
-        policy = ROOT / 'live/parents.json'
-        blocked = set(json.loads(policy.read_text()).get('blocked_route_urls', [])) if policy.exists() else set()
+        policy_file = ROOT / 'live/parents.json'
+        policy = json.loads(policy_file.read_text()) if policy_file.exists() else {}
+    else:
+        policy = {'blocked_route_urls': list(blocked)}
     groups = OrderedDict()
     name, group = "", "其他"
     for raw in body.splitlines():
@@ -32,14 +35,19 @@ def convert(body, blocked=None):
             elif "卫视" in name:
                 group = "卫视"
         elif line.startswith(("http://", "https://")) and name:
-            if line in blocked:
-                name = ""
-                continue
             channels = groups.setdefault(group, OrderedDict())
             routes = channels.setdefault(name, [])
             if line not in routes:
                 routes.append(line)
             name = ""
+    for preferred_name in policy.get('preferred_routes', {}):
+        if preferred_name.startswith('CCTV'):
+            groups.setdefault('央视', OrderedDict()).setdefault(preferred_name, [])
+    for channels in groups.values():
+        for channel_name in list(channels):
+            channels[channel_name] = route_policy.apply(channel_name, channels[channel_name], policy)
+            if not channels[channel_name]:
+                del channels[channel_name]
     count = sum(len(channels) for channels in groups.values())
     if count < 20 or "CCTV1" not in groups.get("央视", {}):
         raise ValueError("upstream missing required channels")

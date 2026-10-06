@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "sources": [
     "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/bestfan.txt",
     "https://larry-biu.github.io/tvbox-config/live/bestfan.txt",
@@ -7,8 +7,20 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/guovin.txt"
   ],
   "blocked_route_urls": [
-    "http://74.91.26.218:82/live/cctv1hd.m3u8",
-    "http://120.198.95.220:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&down=1"
+    "http://74.91.26.218:82/live/cctv1hd.m3u8"
   ],
-  "detect_blue_screen": true
+  "detect_blue_screen": true,
+  "blocked_channel_routes": {
+    "CCTV1": [
+      "http://120.198.95.220:9901/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1&down=1"
+    ]
+  },
+  "blocked_route_hosts": [
+    "74.91.26.218"
+  ],
+  "preferred_routes": {
+    "CCTV1": [
+      "http://120.40.39.246:352/newlive/live/hls/1/live.m3u8"
+    ]
+  }
 }
