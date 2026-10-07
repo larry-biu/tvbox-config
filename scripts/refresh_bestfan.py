@@ -35,6 +35,9 @@ def convert(body, blocked=None):
             elif "卫视" in name:
                 group = "卫视"
         elif line.startswith(("http://", "https://")) and name:
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2}",name):
+                name = ""
+                continue
             channels = groups.setdefault(group, OrderedDict())
             routes = channels.setdefault(name, [])
             if line not in routes:

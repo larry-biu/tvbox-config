@@ -1,0 +1,18 @@
+{
+  "run": 37407682125,
+  "source_ref": "8a42b460d8d6f8f6ea45c9122e2d7c4c1e201a1f",
+  "first_choice_rounds": 2,
+  "channel_entries_checked": 266,
+  "route_entries_checked": 609,
+  "visual_review_completed": true,
+  "all_first_choices_ad_free_verified": false,
+  "unverified_network_cases_preserved": true,
+  "quarantined_hosts": [
+    "107.150.60.122",
+    "173.208.212.130",
+    "198.204.228.26",
+    "207.56.13.146",
+    "74.91.26.218"
+  ],
+  "scope": "Cloud video samples; does not guarantee television compatibility or freedom from future inserted ads"
+}

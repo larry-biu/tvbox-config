@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "sources": [
     "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/bestfan.txt",
     "https://larry-biu.github.io/tvbox-config/live/bestfan.txt",
@@ -7,7 +7,27 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/larry-biu/tvbox-config/main/live/guovin.txt"
   ],
   "blocked_route_urls": [
-    "http://74.91.26.218:82/live/cctv1hd.m3u8"
+    "http://38.75.136.137:98/gslb/dsdqpub/cqxw.m3u8?auth=testpub",
+    "http://38.75.136.137:98/gslb/dsdqpub/gdzja.m3u8?auth=testpub",
+    "http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub",
+    "http://38.75.136.137:98/gslb/dsdqpub/hxjchd.m3u8?auth=testpub",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=dszn",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=fyzq",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gxgj",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hjjc",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nxss",
+    "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xjws",
+    "http://74.91.26.218:82/live/cctv1hd.m3u8",
+    "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8",
+    "http://lbyzztfe.live.sxmty.com/live/hls/645ff4c60e0a49f0a203abbd73dd8be9/0720e665f10f48e98c9639f4f492fb4a-1.m3u8?zshanxd",
+    "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463",
+    "https://epg.pw/stream/5f16dc7fc8aaaed3205516c63e4a8c24bca9dbba1181684244729cf574505b0e.m3u8",
+    "https://epg.pw/stream/8770e89223a086eb1b8a0c931e42296d772a8069ad3eb72540e0c434e7cb3e93.m3u8",
+    "https://event.pull.hebtv.com/jishi/cp2.m3u8",
+    "https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8",
+    "https://hwapi.yntv.net/ew265l/z1z6s5.m3u8",
+    "https://txmov2.a.kwimgs.com/bs3/video-hls/5211790793651941963_hlsb.m3u8",
+    "https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8"
   ],
   "detect_blue_screen": true,
   "blocked_channel_routes": {
@@ -16,11 +36,24 @@
     ]
   },
   "blocked_route_hosts": [
+    "107.150.60.122",
+    "173.208.212.130",
+    "198.204.228.26",
+    "207.56.13.146",
     "74.91.26.218"
   ],
   "preferred_routes": {
     "CCTV1": [
       "http://120.40.39.246:352/newlive/live/hls/1/live.m3u8"
+    ],
+    "CCTV8": [
+      "http://bztv.tvbus.cc:8081/cdnlive/cctv8.m3u8"
+    ],
+    "CCTV14": [
+      "http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009"
+    ],
+    "云南卫视": [
+      "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=ynwshd"
     ]
   }
 }
