@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-15T04:51:17.431546+00:00",
+  "checked_at": "2026-10-15T11:41:43.472608+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "5d887a17d2ffb618f6e52ef44d05adc1990b44ca6441f2f67433bfbb98ee7173",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-15T04:51:44.915066+00:00",
+  "last_success_at": "2026-10-15T11:42:12.835250+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "7aee8a2e08068a01230867d7543c4c8b15b2fb248f4a2314b10f2d5c9d51c589",
+        "response_sha256": "01c442b6535badd9721e49bff106c514ec94cabb582838e6f777aa2f51a308ef",
         "result_count": 20
       },
       "search": {
@@ -36,7 +36,7 @@
       "key": "非凡影视",
       "healthy": true,
       "category": {
-        "response_sha256": "7046817e7ff440612d1c3b982f4875ce98840079a09ec5eb555a0406542411dd",
+        "response_sha256": "3b8afe478a2b831d2a458176ee582ce8f3c3576f8d0e0e5d994406e55bfb4a82",
         "result_count": 20
       },
       "search": {
@@ -53,7 +53,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "3b558d22c342a814f937ca9277533e5274df9134b6255bcf73cdf53700f78162",
+        "response_sha256": "a58bdfff2b9d25f31306e4df96f6d9a7c9a854220d7a52c3e4222702dd35646f",
         "result_count": 20
       },
       "search": {
@@ -120,7 +120,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 206,
-        "sample_bytes": 758,
+        "sample_bytes": 752,
         "media_decoded": false,
         "accessible": true
       },
