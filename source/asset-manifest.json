@@ -1,10 +1,10 @@
 {
   "luban.jar": {
-    "file": "luban-bbf12b041cafe520.jar",
-    "sha256": "bbf12b041cafe5203221ab7ed985fe859ea726cd67bb1b09e8bfbfec62edec68",
-    "md5": "ea169f8282eebc4a538283f9b8b27abe",
+    "file": "luban-ea4b41508b55c6bb.jar",
+    "sha256": "ea4b41508b55c6bbb04628dc35634a565c1a1fda6f4226e85e810ed01bc5d65b",
+    "md5": "29a9f36b2e4d386a5849aaf80d56662d",
     "origin": "http://47.120.41.246:8025/vip/jar/lubin.php",
-    "resolved_origin": "https://jihulab.com/blank6231139/Tvboxjar/-/raw/main/luban0916.jar"
+    "resolved_origin": "https://jihulab.com/blank6231139/Tvboxjar/-/raw/main/luban1009S.jar"
   },
   "bili.jar": {
     "file": "bili-3b39d08338d1fd4e.jar",
