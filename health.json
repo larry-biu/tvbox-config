@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-18T11:21:01.444559+00:00",
+  "checked_at": "2026-10-18T15:58:11.183783+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "506dd05afe9cdf26064e35e2ddd42eec78161ad609061066e04a044a418bd21b",
   "device_playback": "未验收",
   "state": "degraded",
-  "last_success_at": "2026-10-18T11:21:27.607276+00:00",
+  "last_success_at": "2026-10-18T15:58:41.297366+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "081f8cdcdc3ae7249882ed3660b1efceedd708f81d0f980ecb87766d37acac5e",
+        "response_sha256": "dd290c9129fc52575e7510ac644bd2d15860080b02c0d0a307409b4e9e12f6b6",
         "result_count": 20
       },
       "search": {
@@ -36,7 +36,7 @@
       "key": "非凡影视",
       "healthy": true,
       "category": {
-        "response_sha256": "8c9391b3353ff9e3dd704095738ec5723b1bd8a69f4b1384935e805d78597082",
+        "response_sha256": "64bf0e17c0817cb8d6831998dab00f95abe34b1ae00d3386fadd7bffb09f08b0",
         "result_count": 20
       },
       "search": {
@@ -53,7 +53,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "fe0f49a6c2e0fbeb9afd6ad6b1f5f2f3200f563697cd029a2711cd96a240f044",
+        "response_sha256": "59144288fd7af196fb7891038071f02af1cf7486573249b5a2cdf4113dc9a680",
         "result_count": 20
       },
       "search": {
@@ -78,7 +78,7 @@
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
     "checked_endpoints": 63,
-    "accessible": 9,
+    "accessible": 5,
     "channel_count": 58,
     "removed_channels": 0,
     "policy": "地区限制或外网不可达不自动删节目；地址仍由原权威维护流程提供",
@@ -105,10 +105,8 @@
       },
       {
         "url_sha256": "4f7a756c09477061775163742c944575b4a1f851e55e7d169252601ccfeffe6c",
-        "http_status": 206,
-        "sample_bytes": 677,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "URLError"
       },
       {
         "url_sha256": "e180c6c50af76d9d1823e944032fc5530ee25fceae6f8964ff3210b74d06c88f",
@@ -258,10 +256,8 @@
       },
       {
         "url_sha256": "7ddd127f2bb7553bc9d822cfa3977a38a49deb6b2f8a928cfe8c64782f4e003c",
-        "http_status": 206,
-        "sample_bytes": 699,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "URLError"
       },
       {
         "url_sha256": "16932cef3710bb2d98205239fe4f48003629e781faa49b20c2763e690eaa6720",
@@ -290,10 +286,8 @@
       },
       {
         "url_sha256": "f7e63987ad217f8e2684aeb4e52093372e49e176a23e562e75f2bd70baef3330",
-        "http_status": 206,
-        "sample_bytes": 839,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "URLError"
       },
       {
         "url_sha256": "f84fa0e987c198b11cf47a47b579f750ff864cd9653fad2872755c12fb3fcde9",
@@ -303,7 +297,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 521,
+        "sample_bytes": 461,
         "media_decoded": false,
         "accessible": true
       },
@@ -339,7 +333,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 206,
+        "http_status": 200,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
@@ -406,10 +400,8 @@
       },
       {
         "url_sha256": "fee4e1a5c16816617d54760320f54a6056771726167a3a514a823c1b9ccdf7f2",
-        "http_status": 200,
-        "sample_bytes": 109,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "TimeoutError"
       },
       {
         "url_sha256": "06cce07d553ecd808f5ea74c54eb28ca6eca0b99894b7cd75986ad0ca66a6123",
