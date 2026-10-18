@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-17T20:43:27.230587+00:00",
+  "checked_at": "2026-10-18T04:44:30.027350+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "506dd05afe9cdf26064e35e2ddd42eec78161ad609061066e04a044a418bd21b",
   "device_playback": "未验收",
   "state": "degraded",
-  "last_success_at": "2026-10-17T20:43:51.744870+00:00",
+  "last_success_at": "2026-10-18T04:44:55.408263+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "6fdf394e0bc7e26abd253dfa76829eda4d59162563ca51e01beb4dcc93ca2fc1",
+        "response_sha256": "80361ed751dfd2ea269458e05fa4daa702204265cf2a562fbbad3d6e126001cd",
         "result_count": 20
       },
       "search": {
@@ -36,7 +36,7 @@
       "key": "非凡影视",
       "healthy": true,
       "category": {
-        "response_sha256": "3aee84e5897729296517de87aa98431797de4378e165ca97251b56795a2df4ea",
+        "response_sha256": "67c0e9b64c5a5040c732f4f9d97efac924fc33d6496102b93752f50ce393d98e",
         "result_count": 20
       },
       "search": {
@@ -53,7 +53,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "00415de44bd26f9a9e0f82eb65eb5ee3a338ac54aa4a6b4b91049dfaea95439b",
+        "response_sha256": "121eddda8bbca8a3e2c0f13eea1f9884ffb0ac80c203edb997854c7025fdfe23",
         "result_count": 20
       },
       "search": {
@@ -78,7 +78,7 @@
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
     "checked_endpoints": 63,
-    "accessible": 9,
+    "accessible": 8,
     "channel_count": 58,
     "removed_channels": 0,
     "policy": "地区限制或外网不可达不自动删节目；地址仍由原权威维护流程提供",
@@ -124,10 +124,8 @@
       },
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
-        "http_status": 206,
-        "sample_bytes": 758,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "TimeoutError"
       },
       {
         "url_sha256": "4dfee071ec4d2f1ef04f30c9c8dd23ecda3d224eda5163a276da62fdf2b265db",
@@ -303,7 +301,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 459,
+        "sample_bytes": 527,
         "media_decoded": false,
         "accessible": true
       },
