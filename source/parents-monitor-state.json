@@ -2,9 +2,9 @@
   "failures": {
     "CCTV1": 0,
     "CCTV2": 0,
-    "CCTV3": 0,
+    "CCTV3": 1,
     "CCTV13": 0
   },
-  "healthy_runs": 47,
-  "checked_at": "2026-10-18T04:45:48.230140+00:00"
+  "healthy_runs": 0,
+  "checked_at": "2026-10-18T11:22:18.836578+00:00"
 }
