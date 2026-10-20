@@ -91,6 +91,58 @@
       ]
     },
     {
+      "key": "玩偶哥哥",
+      "name": "玩偶哥哥·网盘",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.wogg.net",
+          "https://wogg.xxooo.cf",
+          "https://woggpan.xxooo.cf"
+        ]
+      }
+    },
+    {
+      "key": "木偶",
+      "name": "木偶·网盘",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.muoua.top",
+          "https://666.666291.xyz",
+          "https://333.333291.xyz",
+          "https://www.muou.asia"
+        ]
+      }
+    },
+    {
+      "key": "多多",
+      "name": "多多·网盘",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://tv.yydsys.top",
+          "https://tv.yydsys.cc",
+          "https://tv.214521.xyz"
+        ]
+      }
+    },
+    {
       "key": "戏 曲",
       "name": "戏曲",
       "type": 3,
@@ -244,58 +296,6 @@
         "ratio": 1.597
       },
       "ext": ""
-    },
-    {
-      "key": "玩偶哥哥",
-      "name": "玩偶哥哥·网盘",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": {
-        "site": [
-          "https://www.wogg.net",
-          "https://wogg.xxooo.cf",
-          "https://woggpan.xxooo.cf"
-        ]
-      }
-    },
-    {
-      "key": "木偶",
-      "name": "木偶·网盘",
-      "type": 3,
-      "api": "csp_PanWebShare",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": {
-        "site": [
-          "https://www.muoua.top",
-          "https://666.666291.xyz",
-          "https://333.333291.xyz",
-          "https://www.muou.asia"
-        ]
-      }
-    },
-    {
-      "key": "多多",
-      "name": "多多·网盘",
-      "type": 3,
-      "api": "csp_PanWebShare",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": {
-        "site": [
-          "https://tv.yydsys.top",
-          "https://tv.yydsys.cc",
-          "https://tv.214521.xyz"
-        ]
-      }
     }
   ],
   "ijk": [

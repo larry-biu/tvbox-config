@@ -1,14 +1,7 @@
 {
-  "deprioritized_keys": [
-    "玩偶哥哥",
-    "木偶",
-    "多多"
-  ],
-  "deprioritized_apis": [
-    "csp_Wogg",
-    "csp_PanWebShare"
-  ],
-  "reason": "用户无UC网盘；混合网盘源依赖不明确，保留手动选择，排到末尾并退出聚合搜索与自动换源。",
+  "deprioritized_keys": [],
+  "deprioritized_apis": [],
+  "reason": "保留混合网盘站的夸克高清价值，恢复聚合搜索与自动换源；UC须使用电视端配置中心的panBlock关闭，不能按站名误伤整个混合站。明确UC命名的专用站仍后置。",
   "backup_warehouses": [
     {
       "name": "健康源·备用",
@@ -18,5 +11,10 @@
       "name": "公共聚合·备用",
       "url": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json"
     }
-  ]
+  ],
+  "local_player_setup": {
+    "UC网盘": "关闭（panBlock包含UC网盘）",
+    "夸克网盘": "开启，并使用用户自己的授权",
+    "云盘排序": "夸克优先；这是设备本地偏好，订阅不自动覆盖"
+  }
 }
