@@ -1,16 +1,16 @@
 {
   "urls": [
     {
-      "name": "Larry·影视仓",
+      "name": "家庭精选·默认",
       "url": "https://larry-biu.github.io/tvbox-config/config-pages.json"
     },
     {
-      "name": "Larry·TVBox旧版",
-      "url": "https://larry-biu.github.io/tvbox-config/tvbox-pages.json"
+      "name": "健康源·备用",
+      "url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
     },
     {
-      "name": "Larry·FongMi",
-      "url": "https://larry-biu.github.io/tvbox-config/fongmi-pages.json"
+      "name": "公共聚合·备用",
+      "url": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json"
     }
   ]
 }

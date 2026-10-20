@@ -1,0 +1,22 @@
+{
+  "deprioritized_keys": [
+    "玩偶哥哥",
+    "木偶",
+    "多多"
+  ],
+  "deprioritized_apis": [
+    "csp_Wogg",
+    "csp_PanWebShare"
+  ],
+  "reason": "用户无UC网盘；混合网盘源依赖不明确，保留手动选择，排到末尾并退出聚合搜索与自动换源。",
+  "backup_warehouses": [
+    {
+      "name": "健康源·备用",
+      "url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/exports/healthy.json"
+    },
+    {
+      "name": "公共聚合·备用",
+      "url": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json"
+    }
+  ]
+}

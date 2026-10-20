@@ -4,6 +4,7 @@ import base64
 import copy
 import hashlib
 import json
+import re
 from pathlib import Path
 import urllib.parse
 import zipfile
@@ -24,8 +25,27 @@ def materialize(value, base, assets):
         return base + '/assets/' + record['file'] + suffix
     return value
 
+def viewing_selection(selection, policy):
+    """在每次发布时应用个人偏好，避免上游更新恢复优先级。"""
+    selected = copy.deepcopy(selection)
+    preferred, deferred = [], []
+    for site in selected['sites']:
+        label = str(site.get('key', '')) + ' ' + str(site.get('name', ''))
+        uc_named = bool(re.search(r'(?i)(?<![a-z])uc(?![a-z])|优视网盘', label))
+        if (site['key'] in policy.get('deprioritized_keys', [])
+                or site.get('api') in policy.get('deprioritized_apis', []) or uc_named):
+            site.update(searchable=0, quickSearch=0, changeable=0)
+            deferred.append(site)
+        else:
+            preferred.append(site)
+    selected['sites'] = preferred + deferred
+    return selected
+
+
 def build():
     selection = json.loads((ROOT / 'source/selection.json').read_text())
+    policy = json.loads((ROOT / 'source/viewing-policy.json').read_text())
+    selection = viewing_selection(selection, policy)
     assets = json.loads((ROOT / 'source/asset-manifest.json').read_text())
     live = json.loads((ROOT / 'live/channels.json').read_text())
     for suffix, base in [('', RAW), ('-pages', PAGES)]:
@@ -41,9 +61,8 @@ def build():
             {'name': '家庭直播', 'urls': ['proxy://do=live&type=txt&ext=' + ext]}]}]
         write(ROOT / ('tvbox' + suffix + '.json'), legacy)
         write(ROOT / ('warehouse' + suffix + '.json'), {'urls': [
-            {'name': 'Larry·影视仓', 'url': base + '/config' + suffix + '.json'},
-            {'name': 'Larry·TVBox旧版', 'url': base + '/tvbox' + suffix + '.json'},
-            {'name': 'Larry·FongMi', 'url': base + '/fongmi' + suffix + '.json'}]})
+            {'name': '家庭精选·默认', 'url': base + '/config' + suffix + '.json'},
+            *policy['backup_warehouses']]})
     manifest = {'schema': 1, 'site_count': len(selection['sites']),
                 'channel_count': sum(len(g['channels']) for g in live),
                 'groups': {g['group']: len(g['channels']) for g in live},

@@ -4,16 +4,16 @@
 
 ## 直接导入
 
-**影视仓「配置地址」优先填写：**
+**影视仓「配置地址」优先填写多仓入口，可切换家庭主仓和两个备用仓：**
 
 ```text
-https://larry-biu.github.io/tvbox-config/config-pages.json
+https://larry-biu.github.io/tvbox-config/warehouse-pages.json
 ```
 
 GitHub Raw 同版本入口：
 
 ```text
-https://raw.githubusercontent.com/larry-biu/tvbox-config/main/config.json
+https://raw.githubusercontent.com/larry-biu/tvbox-config/main/warehouse.json
 ```
 
 | 软件／用途 | GitHub Pages 地址 |
@@ -58,3 +58,11 @@ GitHub Raw 的适配文件分别为根目录 `config.json`、`tvbox.json`、`fon
 GitHub提交历史保留回退依据，资源按内容哈希命名。文件下载成功、配置校验通过和电视起播分别记录。外部作者、资源站和用户自己的网盘授权仍可能变化；自动更新解决维护流程，不能保证第三方永久服务。
 
 [参考核查](source/reference-review.json) · [点播API核查](source/vod-verification.json) · [自动任务](https://github.com/larry-biu/tvbox-config/actions/workflows/maintain.yml)
+
+## 多仓与个人网盘偏好（2026-10-20）
+
+多仓依次为家庭精选、hebijunge 健康源备用、TVboxorg 公共聚合备用。外部仓直接引用作者固定入口，独立切换，不合并插件或片库；外部维护和内容可用性不由本仓保证。
+
+`source/viewing-policy.json` 管理备用仓与个人偏好，每次构建均执行。因用户无 UC 网盘账号，明确 UC 名称的入口，以及依赖未细分的玩偶哥哥、木偶、多多混合网盘入口，均移至家庭主仓末尾，关闭聚合搜索、快速搜索和自动换源，仍可手动选择。不宣称三个混合站全是 UC，也不隐藏插件内部单集的 UC 线路。两个外部仓不继承此偏好。独立单仓及旧版 TVBox/FongMi 地址继续可用。
+
+外部入口已读取为有效配置；电视端多仓切换、插件执行和实际播放须另行验收。
