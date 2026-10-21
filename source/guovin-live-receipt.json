@@ -1,6 +1,6 @@
 {
   "upstream": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
-  "checked_at": "2026-10-21T05:00:56.738290+00:00",
+  "checked_at": "2026-10-21T12:02:33.522354+00:00",
   "channels": 200,
   "sha256": "01ddf90e2b27098ffcc67a36cfa629c54d565df2c5ae942fca8d72374533bfcd"
 }
