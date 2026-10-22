@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-21T21:50:41.936958+00:00",
+  "checked_at": "2026-10-22T05:02:03.869358+00:00",
   "scope": "GitHub runner video decode; not television playback",
   "channels": [
     {
@@ -15,7 +15,7 @@
         {
           "source": "backup",
           "decoded": true,
-          "attempts": 1
+          "attempts": 2
         }
       ]
     },
@@ -25,8 +25,8 @@
       "sources": [
         {
           "source": "primary",
-          "decoded": true,
-          "attempts": 1
+          "decoded": false,
+          "attempts": 2
         },
         {
           "source": "backup",
@@ -41,7 +41,7 @@
       "sources": [
         {
           "source": "primary",
-          "decoded": true,
+          "decoded": false,
           "attempts": 2
         },
         {
@@ -70,15 +70,15 @@
   ],
   "refresh": {
     "primary": {
-      "last_refresh_at": "2026-10-21T21:50:41.761657+00:00",
+      "last_refresh_at": "2026-10-22T05:02:03.742315+00:00",
       "age_hours": 0.0
     },
     "backup": {
-      "last_refresh_at": "2026-10-21T21:50:41.849281+00:00",
+      "last_refresh_at": "2026-10-22T05:02:03.801001+00:00",
       "age_hours": 0.0
     }
   },
   "alert_reasons": [],
-  "healthy_runs": 15,
+  "healthy_runs": 16,
   "tv_acceptance": "separate"
 }
