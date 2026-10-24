@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-23T21:30:27.733262+00:00",
+  "checked_at": "2026-10-24T04:46:39.835320+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "506dd05afe9cdf26064e35e2ddd42eec78161ad609061066e04a044a418bd21b",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-23T21:30:51.501276+00:00",
+  "last_success_at": "2026-10-24T04:47:04.908899+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "09a8126ba2318fa84273b17fae5b1925d8077b17032494bf7ce616e45fc7f993",
+        "response_sha256": "f971f1749fede1576c42de4d4e2949c989c01877dd049b0f941fec7cc990bfa1",
         "result_count": 20
       },
       "search": {
@@ -36,7 +36,7 @@
       "key": "非凡影视",
       "healthy": true,
       "category": {
-        "response_sha256": "3def6961834789bd9bddbcd8c602ee1c0fb22e8b1da9b0883364f76dcacec16d",
+        "response_sha256": "d5d5954e06be17928cb1fb069dd53ab6fdc0f1310b689c87fb92e16e328f6ca5",
         "result_count": 20
       },
       "search": {
@@ -53,7 +53,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "33a1ec661baa068075d399d1e598de09e5c312a7670497e4ae37f6f52323a1ae",
+        "response_sha256": "873a44fc77d52a4dabb195b2889687b79e7a050295fadb18ab8ebda6c1a393bb",
         "result_count": 20
       },
       "search": {
@@ -120,7 +120,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 200,
-        "sample_bytes": 662,
+        "sample_bytes": 656,
         "media_decoded": false,
         "accessible": true
       },
@@ -298,7 +298,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 461,
+        "sample_bytes": 463,
         "media_decoded": false,
         "accessible": true
       },
@@ -334,7 +334,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 206,
+        "http_status": 200,
         "sample_bytes": 473,
         "media_decoded": false,
         "accessible": true
