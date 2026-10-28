@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T22:23:17.604365+00:00",
+  "checked_at": "2026-10-28T05:54:09.023776+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "2d192218440ca3fa93c18f42d6d429994cc8717d31db5fe62b13d9cd39b51e5e",
   "device_playback": "未验收",
   "state": "healthy",
-  "last_success_at": "2026-10-27T22:23:45.390559+00:00",
+  "last_success_at": "2026-10-28T05:54:38.663183+00:00",
   "upstream": {
     "input": "https://700sjro44343.vicp.fun/240731/one/",
     "origin": "http://47.120.41.246:8025/vip/vip/tv.json",
@@ -19,7 +19,7 @@
       "key": "非凡影视",
       "healthy": true,
       "category": {
-        "response_sha256": "2bf7d71e11cc6c55d447a8d465c91fde05f8727eeba8ddc5dca67c3123c07f58",
+        "response_sha256": "01fbccd4133f239b42f7b9c23b5caa10cb6522d107795307b33e3a672f83ab49",
         "result_count": 20
       },
       "search": {
@@ -36,7 +36,7 @@
       "key": "如意影视",
       "healthy": true,
       "category": {
-        "response_sha256": "a215e2dbafbfbd569e37e0b4b765616326cefc950e2ba5fbff8489d8c0e44365",
+        "response_sha256": "b9813d799907f7b414ed015ce34fe9ceea6c5833b93843b64bfbf1a44ebe70a7",
         "result_count": 20
       },
       "search": {
@@ -53,15 +53,15 @@
       "key": "量子影视",
       "healthy": true,
       "category": {
-        "response_sha256": "f2cd8d527d867677156de45d8b7309c2035198c56bd0c606f3ee3694a8b9e0c4",
+        "response_sha256": "70645b59c9244343bfb7e9f1940f9dd9d4cca333bdab83f2236788784edb3d21",
         "result_count": 20
       },
       "search": {
-        "response_sha256": "bdd5b0f9022077ae0f1a42d9082057641802008dce9407abb9d248b1f8ba93c6",
+        "response_sha256": "076eb4ad2d548563d51b221565408aff134e7c08e29a1435593b0d024f0b07ef",
         "result_count": 20
       },
       "detail": {
-        "response_sha256": "467156c251a9ebc77fdc1e4816c0da4babc2bb25bdf44f1debe279952f47425b",
+        "response_sha256": "a0d6b8bb7806973788f56316cc0f2f6805bbcec21ee8d5a1e6b525b8a5f82235",
         "result_count": 1
       },
       "media_playback": false
@@ -298,7 +298,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 517,
+        "sample_bytes": 461,
         "media_decoded": false,
         "accessible": true
       },
