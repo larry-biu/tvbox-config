@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T05:58:58.087184+00:00",
+  "checked_at": "2026-10-29T13:17:18.577507+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "2d192218440ca3fa93c18f42d6d429994cc8717d31db5fe62b13d9cd39b51e5e",
   "device_playback": "未验收",
   "state": "retained",
-  "reason": "JAR缺少所选爬虫类：Wogg",
+  "reason": "全部上游入口读取失败：[{\"entrance\": \"https://700sjro44343.vicp.fun/240731/one/\", \"reason\": \"上游站点key重复\"}, {\"entrance\": \"http://www.影视仓.com\", \"reason\": \"ConnectionResetError: [Errno 104] Connection reset by peer\"}, {\"entrance\": \"http://www.影视仓.net\", \"reason\": \"ConnectionResetError: [Errno 104] Connection reset by peer\"}, {\"entrance\": \"http://www.ok影视.com\", \"reason\": \"ConnectionResetError: [Errno 104] Connection reset by peer\"}]",
   "last_success_at": "2026-10-28T05:54:38.663183+00:00",
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
@@ -59,7 +59,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 200,
-        "sample_bytes": 679,
+        "sample_bytes": 656,
         "media_decoded": false,
         "accessible": true
       },
@@ -237,7 +237,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 463,
+        "sample_bytes": 459,
         "media_decoded": false,
         "accessible": true
       },
@@ -273,7 +273,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 200,
+        "http_status": 206,
         "sample_bytes": 473,
         "media_decoded": false,
         "accessible": true
