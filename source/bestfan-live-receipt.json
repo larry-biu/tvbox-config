@@ -1,6 +1,6 @@
 {
   "upstream": "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8",
-  "checked_at": "2026-11-04T19:53:12.840424+00:00",
-  "channels": 50,
-  "sha256": "765d75016c3e59708fec50fcbed7b3aad9bca2d9ef37488c2e71d00cfcee2a9f"
+  "checked_at": "2026-11-05T07:02:35.819002+00:00",
+  "channels": 59,
+  "sha256": "031f9770cf1edd3bff8388d909ddfdad3216bced8975ec53948826cca061c7c8"
 }
