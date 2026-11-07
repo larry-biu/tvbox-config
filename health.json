@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T06:58:29.987344+00:00",
+  "checked_at": "2026-11-07T06:11:34.943509+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
@@ -12,7 +12,7 @@
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
     "checked_endpoints": 63,
-    "accessible": 9,
+    "accessible": 8,
     "channel_count": 58,
     "removed_channels": 0,
     "policy": "地区限制或外网不可达不自动删节目；地址仍由原权威维护流程提供",
@@ -58,8 +58,8 @@
       },
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
-        "http_status": 200,
-        "sample_bytes": 662,
+        "http_status": 206,
+        "sample_bytes": 166,
         "media_decoded": false,
         "accessible": true
       },
@@ -237,7 +237,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 517,
+        "sample_bytes": 527,
         "media_decoded": false,
         "accessible": true
       },
@@ -273,7 +273,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 200,
+        "http_status": 206,
         "sample_bytes": 473,
         "media_decoded": false,
         "accessible": true
@@ -340,10 +340,8 @@
       },
       {
         "url_sha256": "fee4e1a5c16816617d54760320f54a6056771726167a3a514a823c1b9ccdf7f2",
-        "http_status": 200,
-        "sample_bytes": 109,
-        "media_decoded": false,
-        "accessible": true
+        "accessible": false,
+        "reason": "HTTPError"
       },
       {
         "url_sha256": "06cce07d553ecd808f5ea74c54eb28ca6eca0b99894b7cd75986ad0ca66a6123",
