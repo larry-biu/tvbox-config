@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-10T07:29:13.393605+00:00",
+  "checked_at": "2026-11-10T19:51:14.956939+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
@@ -273,7 +273,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 206,
+        "http_status": 200,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
