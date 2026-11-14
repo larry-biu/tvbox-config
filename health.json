@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-13T19:51:09.132667+00:00",
+  "checked_at": "2026-11-14T06:41:05.158147+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
@@ -59,7 +59,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 206,
-        "sample_bytes": 758,
+        "sample_bytes": 781,
         "media_decoded": false,
         "accessible": true
       },
@@ -237,7 +237,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 527,
+        "sample_bytes": 523,
         "media_decoded": false,
         "accessible": true
       },
@@ -273,7 +273,7 @@
       },
       {
         "url_sha256": "4dfa9d0620c7bc6046223eacaaf7b79bb4014cc81d9f8c83780dfd43f0afa581",
-        "http_status": 200,
+        "http_status": 206,
         "sample_bytes": 474,
         "media_decoded": false,
         "accessible": true
