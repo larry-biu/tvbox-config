@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T21:59:07.808314+00:00",
+  "checked_at": "2026-11-26T08:34:46.607751+00:00",
   "scope": "配置自动维护，不代表电视实播",
   "schedule_hours": 6,
   "configuration_changed": false,
   "last_good_config_sha256": "2d192218440ca3fa93c18f42d6d429994cc8717d31db5fe62b13d9cd39b51e5e",
   "device_playback": "未验收",
   "state": "retained",
-  "reason": "URLError: <urlopen error timed out>",
+  "reason": "JAR缺少所选爬虫类：Wogg",
   "last_success_at": "2026-10-28T05:54:38.663183+00:00",
   "live_audit": {
     "scope": "任务运行网络，仅清单/小段HTTP读取，不是家庭联通或实播证明",
@@ -47,7 +47,7 @@
       {
         "url_sha256": "e180c6c50af76d9d1823e944032fc5530ee25fceae6f8964ff3210b74d06c88f",
         "http_status": 200,
-        "sample_bytes": 426,
+        "sample_bytes": 424,
         "media_decoded": false,
         "accessible": true
       },
@@ -59,7 +59,7 @@
       {
         "url_sha256": "5c05cec0e0596857e19ef94f3986068e0d0e513c8299e8f3fdd0c708a4994d2d",
         "http_status": 206,
-        "sample_bytes": 764,
+        "sample_bytes": 758,
         "media_decoded": false,
         "accessible": true
       },
@@ -237,7 +237,7 @@
       {
         "url_sha256": "89a392e89990a4ea0e7251b396779633df10f9bda36ad2ac45420022bc8c4266",
         "http_status": 206,
-        "sample_bytes": 463,
+        "sample_bytes": 527,
         "media_decoded": false,
         "accessible": true
       },
