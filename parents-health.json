@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T08:35:47.926010+00:00",
+  "checked_at": "2026-11-26T08:55:48.465534+00:00",
   "scope": "GitHub runner video decode; not television playback",
   "channels": [
     {
@@ -70,15 +70,15 @@
   ],
   "refresh": {
     "primary": {
-      "last_refresh_at": "2026-11-26T08:35:47.734391+00:00",
+      "last_refresh_at": "2026-11-26T08:55:48.385801+00:00",
       "age_hours": 0.0
     },
     "backup": {
-      "last_refresh_at": "2026-11-26T08:35:47.866729+00:00",
+      "last_refresh_at": "2026-11-26T08:55:48.402683+00:00",
       "age_hours": 0.0
     }
   },
   "alert_reasons": [],
-  "healthy_runs": 108,
+  "healthy_runs": 109,
   "tv_acceptance": "separate"
 }
